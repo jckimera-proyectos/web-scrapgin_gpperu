@@ -1,0 +1,13 @@
+# CATEGORIAS
+
+//select[@id='select_category']
+
+//select[@id='select_category']/option[not(position()=1)]
+//option[contains(text(),'Categorías')]/following-sibling::option
+
+
+# MARCAS
+//li[contains(text(), 'Marca')]/following-sibling::li/a
+
+# PRODUCTO CON OFERTAS
+//img[contains(@alt, 'Oferta')]/ancestor::div[@class='item']
